@@ -36,8 +36,8 @@ model.fit(sim1, vnd1)
 vnd2 = model.predict(sim2)
 
 test["price_vnd"] = vnd2
-test.to_csv("result1.csv", index=False)
+test.to_csv("result.csv", index=False)
 
-result = pd.read_csv("result1.csv")
+result = pd.read_csv("result.csv")
 result = result.drop(columns= ["digit1","digit2","digit3","digit4","digit5","digit6","digit7","digit8","digit9"])
-result.to_csv("result1.csv", index=False)
+result.to_csv("result.csv", index=False)
